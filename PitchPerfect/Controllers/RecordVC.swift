@@ -21,7 +21,6 @@ class RecordVC: UIViewController, AVAudioRecorderDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -34,14 +34,11 @@ class PlayRecordingVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupAudio()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         configureUI(.notPlaying)
     }
     
@@ -64,7 +61,6 @@ class PlayRecordingVC: UIViewController {
         
         configureUI(.playing)
         
-        //print(audioFile.framePosition)
     }
     
     @IBAction func stopButtonWasPressed(_ sender: AnyObject) {
