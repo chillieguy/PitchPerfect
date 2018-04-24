@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF666E31203BC58E001B40CF /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF666E30203BC58E001B40CF /* PlaySoundsViewController+Audio.swift */; };
 		FFFF1843203B2A3D00AEEF91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF1842203B2A3D00AEEF91 /* AppDelegate.swift */; };
-		FFFF1845203B2A3D00AEEF91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF1844203B2A3D00AEEF91 /* ViewController.swift */; };
+		FFFF1845203B2A3D00AEEF91 /* RecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF1844203B2A3D00AEEF91 /* RecordVC.swift */; };
 		FFFF1848203B2A3D00AEEF91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFFF1846203B2A3D00AEEF91 /* Main.storyboard */; };
 		FFFF184A203B2A3D00AEEF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFFF1849203B2A3D00AEEF91 /* Assets.xcassets */; };
 		FFFF184D203B2A3D00AEEF91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFFF184B203B2A3D00AEEF91 /* LaunchScreen.storyboard */; };
+		FFFF1858203BB9FE00AEEF91 /* PlayRecordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF1857203BB9FE00AEEF91 /* PlayRecordingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF666E30203BC58E001B40CF /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 		FFFF183F203B2A3D00AEEF91 /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFF1842203B2A3D00AEEF91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFFF1844203B2A3D00AEEF91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFFF1844203B2A3D00AEEF91 /* RecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVC.swift; sourceTree = "<group>"; };
 		FFFF1847203B2A3D00AEEF91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFFF1849203B2A3D00AEEF91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFFF184C203B2A3D00AEEF91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFFF184E203B2A3D00AEEF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFFF1857203BB9FE00AEEF91 /* PlayRecordingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayRecordingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		FFFF1841203B2A3D00AEEF91 /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
-				FFFF1842203B2A3D00AEEF91 /* AppDelegate.swift */,
-				FFFF1844203B2A3D00AEEF91 /* ViewController.swift */,
+				FFFF1855203B2B6800AEEF91 /* Controllers */,
+				FFFF1856203B2B7900AEEF91 /* Views */,
+				FFFF1854203B2B5200AEEF91 /* Resources */,
 				FFFF1846203B2A3D00AEEF91 /* Main.storyboard */,
-				FFFF1849203B2A3D00AEEF91 /* Assets.xcassets */,
-				FFFF184B203B2A3D00AEEF91 /* LaunchScreen.storyboard */,
 				FFFF184E203B2A3D00AEEF91 /* Info.plist */,
+				FF666E30203BC58E001B40CF /* PlaySoundsViewController+Audio.swift */,
 			);
 			path = PitchPerfect;
+			sourceTree = "<group>";
+		};
+		FFFF1854203B2B5200AEEF91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFFF1842203B2A3D00AEEF91 /* AppDelegate.swift */,
+				FFFF1849203B2A3D00AEEF91 /* Assets.xcassets */,
+				FFFF184B203B2A3D00AEEF91 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFFF1855203B2B6800AEEF91 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFFF1844203B2A3D00AEEF91 /* RecordVC.swift */,
+				FFFF1857203BB9FE00AEEF91 /* PlayRecordingVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FFFF1856203B2B7900AEEF91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +121,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Chuck Underwood";
 				TargetAttributes = {
 					FFFF183E203B2A3D00AEEF91 = {
@@ -136,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFFF1845203B2A3D00AEEF91 /* ViewController.swift in Sources */,
+				FFFF1845203B2A3D00AEEF91 /* RecordVC.swift in Sources */,
+				FF666E31203BC58E001B40CF /* PlaySoundsViewController+Audio.swift in Sources */,
 				FFFF1843203B2A3D00AEEF91 /* AppDelegate.swift in Sources */,
+				FFFF1858203BB9FE00AEEF91 /* PlayRecordingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +209,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +217,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -234,6 +268,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +276,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
