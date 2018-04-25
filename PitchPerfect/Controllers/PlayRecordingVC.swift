@@ -11,8 +11,6 @@ import AVFoundation
 
 class PlayRecordingVC: UIViewController {
     
-    
-    
     @IBOutlet weak var snailButton: UIButton!
     @IBOutlet weak var chipmunkButton: UIButton!
     @IBOutlet weak var rabbitButton: UIButton!
@@ -60,7 +58,6 @@ class PlayRecordingVC: UIViewController {
         }
         
         configureUI(.playing)
-        
     }
     
     @IBAction func stopButtonWasPressed(_ sender: AnyObject) {

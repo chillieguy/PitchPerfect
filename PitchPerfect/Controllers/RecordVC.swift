@@ -16,7 +16,6 @@ class RecordVC: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var stopButton: UIButton!
     
     var audioRecorder: AVAudioRecorder!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +64,6 @@ class RecordVC: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
-        
     }
     
     
@@ -86,4 +84,3 @@ class RecordVC: UIViewController, AVAudioRecorderDelegate {
     }
     
 }
-
