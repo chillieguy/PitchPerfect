@@ -33,11 +33,21 @@ class PlayRecordingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
+        setSoundButtonAttributes()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureUI(.notPlaying)
+    }
+    
+    func setSoundButtonAttributes() {
+        snailButton.imageView?.contentMode = .scaleAspectFit
+        chipmunkButton.imageView?.contentMode = .scaleAspectFit
+        rabbitButton.imageView?.contentMode = .scaleAspectFit
+        vaderButton.imageView?.contentMode = .scaleAspectFit
+        echoButton.imageView?.contentMode = .scaleAspectFit
+        reverbButton.imageView?.contentMode = .scaleAspectFit
     }
     
     @IBAction func playSoundForButtonWasPressed(_ sender: UIButton) {
