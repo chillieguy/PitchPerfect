@@ -13,3 +13,6 @@ I learned how to use:
 [Intro to iOS App Development with Swift](https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585)
 
 [Swift naming and style conventions](https://github.com/github/swift-style-guide)
+
+April 25, 2018 - 
+Refactored button state into seperate function based on code review by Fransico from Udacity.
