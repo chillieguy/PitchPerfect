@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordVC.swift
 //  PitchPerfect
 //
 //  Created by Chuck Underwood on 2/19/18.
@@ -16,17 +16,16 @@ class RecordVC: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var stopButton: UIButton!
     
     var audioRecorder: AVAudioRecorder!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        stopButton.isEnabled = false
-        recordButton.isEnabled = true
+        setButtonsEnabledState(forRecording: false)
+    }
+    
+    func setButtonsEnabledState(forRecording state: Bool) {
+        stopButton.isEnabled = state
+        recordButton.isEnabled = !state
     }
 
     @IBAction func recordButtonWasPressed(_ sender: Any) {
@@ -39,8 +38,7 @@ class RecordVC: UIViewController, AVAudioRecorderDelegate {
     
     func startRecordingAudio() {
         recordLabel.text = "Recording in progress..."
-        stopButton.isEnabled = true
-        recordButton.isEnabled = false
+        setButtonsEnabledState(forRecording: true)
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
